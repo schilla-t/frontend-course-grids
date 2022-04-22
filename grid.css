@@ -1,0 +1,37 @@
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-column-gap: 40px; /* Az oszlopok közötti rés mértéke*/
+    grid-row-gap: 50px; /*A sorok közötti rés mértéke*/
+    justify-content: center;
+    align-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+   
+}
+
+/*A reszponzivitás elérése*/
+@media only screen and (max-width: 480px) {
+    /* Telefonok álló */
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Telefonok fekvő és mini tabletek álló */
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tabletek fekvő */
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* tabletek és kisebb laptopok */
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    /* Közepes laptopok, asztali kijelzők */
+}
+
+@media only screen and (min-width: 1601px) {
+    /* nagyobb laptopok, monitorok */
+}

@@ -1,0 +1,183 @@
+*,
+*:before,
+*:after{
+box-sizing: border-box;
+}
+
+
+body{
+font-family: 'Manrope', sans-serif;
+font-size: 22px; line-height: 1.5;
+background: #f4f1ea url(img/adventure.png) top center;
+background-size: 100% auto;
+color: #333333;
+margin: 0;
+padding: 0;
+}
+
+
+main img{
+  border-radius: 10px;
+  border: solid 10px #fff;
+  box-shadow: 0 1px 10px rgba(0, 0,0, 0.2);
+}
+
+
+
+header{
+  text-align: center;
+  background: url(img/top.png) bottom center; 
+  height: 850px;
+  width: 100%;
+}
+
+footer{
+  height: 400px;
+  text-align: center;
+  background: url(img/forest.png) bottom center repeat-x;
+  background-size: auto 100%; color: #fff; 
+  padding-top: 350px;
+  padding-bottom: 15px;
+  font-size: smaller;
+}
+
+
+
+h1,h2,h3,h4{
+  font-family: 'Eczar', serif; 
+  font-weight: 500;
+  text-shadow: 2px 2px 0 #fff, 4px 4px 5px rgba(0, 0,0, 0.2);
+}
+
+h1{
+  font-size: 60px;
+  margin-left: 9.5%;
+}
+
+h2{
+  font-size: 44px;
+}
+
+h3{
+  font-size: 32px;
+}
+
+h1,h2{ 
+  background: url(img/title-bg.svg) bottom left no-repeat;
+  background-size: 55px auto;
+ 
+}
+
+
+
+a{
+  color: #7e9758;
+}
+
+ul li::marker{
+  color: #7e9758;
+}
+
+ol{
+  counter-reset: li-counter;
+}
+
+ol li{
+  counter-increment: li-counter;
+  list-style-type: none;
+}
+
+ol li:before{
+  content: counter(li-counter) ".";
+    background-color: #7e9758;
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    line-height: 1.5;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: smaller;
+    margin: 15px;
+}
+
+nav ul{
+  display: inline-block;
+  margin: 0 0 80px 0;
+  padding: 0;
+  border-bottom: solid 2px rgba(0, 0,0, 0.2);
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 35px 45px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 908px) {
+   nav ul li a{
+     display: block;
+     text-align: center;
+     margin: 35px 45px;
+   }
+   nav ul li:first-of-type a{
+    margin: auto;
+  }
+
+  nav ul li:last-of-type a{
+    margin: auto;
+  }
+ h2{
+   font-size: 17px;
+ }
+ h1{
+   font-size: 30px;
+ }
+path{
+ max-width: 50%;
+}
+}
+
+nav ul li a:hover{
+  color: #7e9758;
+  
+}
+
+nav ul li:first-of-type a{
+  margin-left: 0;
+
+}
+
+nav ul li:last-of-type a{
+  margin-right: 0;
+  
+}
+
+header svg {
+  width: 260px;
+  height: auto;
+  margin: 20px;
+}
+
+header svg path {
+  fill: #333;
+}
+
+main{
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+#second{
+  text-align: center;
+}
